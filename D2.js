@@ -80,7 +80,7 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const totalShoppingCart2 = 59
+const totalShoppingCart2 = 50
 
 if (totalShoppingCart2 * 0.8 > 50) {
   console.log("Spedizione gratuita")
