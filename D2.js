@@ -3,12 +3,16 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n1 = 10
-let n5
+let n1 = 7
+let n5 = 10
 
-let maxNumber =
-  n1 > n5 ? "Questo è il numero più grande" : "Questo è il numero più piccolo"
-console.log(maxNumber)
+if (n1 > n5) {
+  console.log("il maggiore è ", n1)
+} else if (n5 > n1) {
+  console.log("il numero maggiore è ", n5)
+} else {
+  console.log("i numeri sono uguali")
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -27,8 +31,8 @@ console.log(onlyNumber)
 /* SCRIVI QUI LA TUA RISPOSTA */
 let n3 = 15
 
-if (n3 % 5 === 0) {
-  console.log(n3, "è divisibile per 5")
+if (n3 % 2 === 0) {
+  console.log("è divisibile per 5")
 } else {
   console.log("non è divisibile per 5")
 }
@@ -41,7 +45,13 @@ if (n3 % 5 === 0) {
 const number1 = 8
 const number2 = 4
 
-if (number1 === 8 && number2 - number1) {
+if (
+  number1 === 8 ||
+  number2 === 8 ||
+  number2 - number1 ||
+  number1 - number2 ||
+  number1 + number2
+) {
   console.log("Il valore è 8")
 } else {
   console.log("il valore è diverso")
@@ -54,7 +64,7 @@ if (number1 === 8 && number2 - number1) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let totalShoppingCart = 50
+const totalShoppingCart = 50
 
 if (totalShoppingCart > 50) {
   console.log("Spedizione gratuita")
@@ -70,14 +80,12 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let blackFriday = totalShoppingCart * 0.2
+const totalShoppingCart2 = 59
 
-totalShoppingCart -= blackFriday
-
-if (totalShoppingCart > 50) {
+if (totalShoppingCart2 * 0.8 > 50) {
   console.log("Spedizione gratuita")
-} else if (totalShoppingCart <= 50) {
-  console.log(totalShoppingCart + 10, " Totale carrello")
+} else if (totalShoppingCart2 <= 50) {
+  console.log(totalShoppingCart2 + 10 + " Totale carrello")
 } else {
   console.log("Questo è il totale con la spedizione")
 }
@@ -89,12 +97,15 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let num1 = 37
-let num2 = 2
-let num3 = 89
-const numbers = [num1, num2, num3]
-numbers.sort()
-console.log(numbers)
+const y1 = 37
+const y2 = 2
+const y3 = 89
+
+if (y1 > y2 && y2 > y3 && y3 > y1) {
+  console.log(y1, y2, y3)
+} else if (y1 < y2 && y2 < y3 && y3 < y1) {
+  console.log()
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -114,7 +125,7 @@ if (typeof value === "number") {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n4 = 10
+let n4 = 57
 
 if (n4 % 2 === 0) {
   console.log("Il numero è pari")
@@ -136,9 +147,9 @@ if (n4 % 2 === 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let val = 3
-if (val < 5 && val > 10) {
+if (val < 5) {
   console.log("Meno di 10")
-} else if (val < 5) {
+} else if (val < 10) {
   console.log("Meno di 5")
 } else {
   console.log("Uguale a 10 o maggiore")
