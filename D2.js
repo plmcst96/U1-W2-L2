@@ -88,6 +88,9 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let num1 = 37
+let num2 = 2
+let num3 = 89
 const numbers = [37, 2, 89]
 numbers.sort()
 console.log(numbers)
