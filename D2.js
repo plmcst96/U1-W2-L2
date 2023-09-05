@@ -97,15 +97,32 @@ if (totalShoppingCart2 * 0.8 > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const y1 = 37
-const y2 = 2
-const y3 = 89
+const z1 = 37
+const z2 = 2
+const z3 = 89
 
-if (y1 > y2 && y2 > y3 && y3 > y1) {
-  console.log(y1, y2, y3)
-} else if (y1 < y2 && y2 < y3 && y3 < y1) {
-  console.log()
+f (z1 >= z2) {
+  if (z3 >= z1) {
+    console.log(z3, z1, z2)
+  } else {
+    if (z3 >= z2) {
+      console.log(z1, z3, z2)
+    } else {
+      console.log(z1, z2, z3)
+    }
+  }
+} else {
+  if (z3 >= z2) {
+    console.log(z3, z2, z1)
+  } else {
+    if (z3 >= z1) {
+      console.log(z2, z3, z1)
+    } else {
+      console.log(z2, z1, z3)
+    }
+  }
 }
+// capire come risolvere questo esercizio
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
