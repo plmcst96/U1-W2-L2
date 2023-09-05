@@ -4,9 +4,10 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let n1 = 10
+let n5
 
 let maxNumber =
-  n1 > 5 ? "Questo è il numero più grande" : "Questo è il numero più piccolo"
+  n1 > n5 ? "Questo è il numero più grande" : "Questo è il numero più piccolo"
 console.log(maxNumber)
 
 /* ESERCIZIO 2
@@ -91,7 +92,7 @@ if (totalShoppingCart > 50) {
 let num1 = 37
 let num2 = 2
 let num3 = 89
-const numbers = [37, 2, 89]
+const numbers = [num1, num2, num3]
 numbers.sort()
 console.log(numbers)
 
@@ -134,10 +135,10 @@ if (n4 % 2 === 0) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let val = 7
-if (val < 5) {
+let val = 3
+if (val < 5 && val > 10) {
   console.log("Meno di 10")
-} else if (val < 10) {
+} else if (val < 5) {
   console.log("Meno di 5")
 } else {
   console.log("Uguale a 10 o maggiore")
